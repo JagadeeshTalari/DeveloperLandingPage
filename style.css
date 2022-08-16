@@ -1,0 +1,355 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  background-color: #f8f8fa;
+  width: 100vw;
+}
+
+/* 1. Header section */
+header {
+  display: inline-block;
+  background-color: #4516fe;
+  width: 100vw;
+  height: 45vh;
+  color: #ffffff;
+}
+/* (i) Nav- bar section */
+nav {
+  height: 5vh;
+  /* background-color: #d86b6b; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  margin-right: 120px;
+  margin-top: 20px;
+}
+
+.nav-item-active {
+  color: #4516fe;
+  background-color: #ffffff;
+  padding: 2px 15px;
+  border: none;
+  border-radius: 2px;
+}
+
+/* (ii)  Header description Left section */
+header > div {
+  margin-left: 100px;
+}
+
+.header-text {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 5vh;
+  width: 50vw;
+  gap: 10px;
+}
+.header-text > img {
+  height: 5px;
+  width: 40px;
+}
+
+.header-text > h2 {
+  font-size: 36px;
+}
+
+/* (iii)  Header image right section */
+.header-image {
+  display: inline-block;
+  float: right;
+  margin-top: -230px;
+  margin-right: 15px;
+
+}
+/* 2. Companies section */
+.companies {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  justify-content: space-around;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.company-items {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+/* 3. Api Section */
+.api {
+  margin: 120px 0px 30px 100px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.card {
+  height: 18vh;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.card-logo {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.card-active {
+  background-color: #ffffff;
+  height: 18vh;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.card-head-active {
+  color: #4516fe;
+}
+
+
+/* Blog section  */
+.blog-heading {
+  display: flex;
+  flex-direction: column;
+  margin: 140px 0px 30px 100px;
+}
+/* <!-- Blogs --> */
+  .blog-cards{
+    margin-bottom: 60px;
+  }
+
+  .blog-card{
+    width: 45vw;
+    justify-content: center;
+  }
+
+.blog-content{
+  background-color:  #ffffff;
+  width: 20vw;
+  border-top-right-radius:10px ;
+  border-bottom-right-radius:10px;
+  padding: 20px 10px 50px 60px;
+  justify-content: space-between;
+
+}
+
+div.blog-content>h6{
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+
+div.blog-content>h3{
+  
+  margin-bottom: 15px; 
+}
+
+.blog-bottom{
+  position: relative;
+  top: 250px;
+  right: 280px;
+
+}
+
+.blog-author{
+  width: 300px;
+  position: relative;
+  top: 125px;
+  right: 125px;
+}
+
+.blog-cards,
+.download-section,
+.faq-content,
+.footer-left {
+  margin-left: 100px;
+}
+
+.blog-cards,
+.blog-card,
+.faq-section,
+.download-section,
+.footer-section,
+.list,
+.logos-list,
+.footer-right-logo,
+.logos-list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* <!-- FAQ SECTION --> */
+.faq-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #e9edff;
+  background-size: cover;
+  gap: 100px;
+}
+
+.faq-image {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.faq-content
+{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 30px 0px 30px 100px;
+}
+.faq-content>h2{
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+div.faq-content>h4:nth-child(2){
+  font-size: 12px;
+  font-weight: 800;
+}
+
+div.faq-content>h4:nth-child(3){
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.faq-content>button{
+  height: 40px;
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5a31fc;
+  color: #ffffff;
+  position: relative;
+  z-index: 2px;
+}
+/* <!-- Download --> */
+.download-section {
+  width: 85vw;
+  height: 15vh;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.download-content > h1 {
+  font-weight: 900;
+}
+.download-content > span {
+  font-weight: 500;
+}
+
+.download-email > form > input {
+  height: 58px;
+  width: 550px;
+  border: none;
+  border-radius: 25px;
+  background-color: #e9edff;
+  color: #000000;
+  position: relative;
+  left: 160px;
+  padding-left: 50px;
+}
+
+.download-email > form > button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 25px;
+  background-color: #5a31fc;
+  color: #ffffff;
+  position: relative;
+  z-index: 2px;
+}
+/* <!-- Footer Section --> */
+.footer-section {
+  background-color: #4516fe;
+  width: 100vw;
+  height: 30vh;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  height: 15vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-right {
+  height: 15vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-right: 150px;
+}
+
+.footer-right-logo {
+  gap: 20px;
+}
+.footer-logos {
+  height: 40px;
+  width: 40px;
+}
+
+.footer-logo {
+  height: 45px;
+  width: 115px;
+}
+
+.logos-list,
+.list {
+  list-style-type: none;
+  gap: 10px;
+}
+
+.list-items:before {
+  content: "|";
+  margin-right: 15px;
+}
+
+.list-items:first-child:before {
+  content: "";
+}
