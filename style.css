@@ -1,5 +1,5 @@
 /* POPPINS FONT FAMILY */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 * {
@@ -12,14 +12,20 @@
 body {
   background-color: #f8f8fa;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5vh;
 }
 
 /* 1. Header section */
 header {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+
   background-color: #4516fe;
   width: 100vw;
-  height: 45vh;
+  height: 50vh;
   color: #ffffff;
 }
 /* (i) Nav- bar section */
@@ -31,8 +37,8 @@ nav {
   justify-content: flex-end;
   align-items: center;
   gap: 40px;
-  margin-right: 120px;
-  margin-top: 20px;
+  margin-right:4vw;
+  margin-top: 3vh;
 }
 
 .nav-item-active {
@@ -45,11 +51,17 @@ nav {
 
 /* (ii)  Header description Left section */
 header > div {
-  margin-left: 100px;
+  margin-left: 5vw;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header-text {
-  margin-top: 150px;
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -57,31 +69,32 @@ header > div {
   width: 50vw;
   gap: 10px;
 }
+
 .header-text > img {
   height: 5px;
   width: 40px;
 }
 
 .header-text > h2 {
-  font-size: 36px;
+  font-size: 42px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
 }
 
 /* (iii)  Header image right section */
 .header-image {
-  display: inline-block;
-  float: right;
-  margin-top: -230px;
-  margin-right: 15px;
-
+  height: 50vh;
+  width: 35vw;
 }
 /* 2. Companies section */
 .companies {
   display: flex;
   flex-direction: row;
-  width: 60vw;
-  justify-content: space-around;
+  width: 50vw;
+  justify-content: space-between;
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 3vh;
+  margin-left: 5vw;
 }
 
 .company-items {
@@ -89,29 +102,34 @@ header > div {
   color: #000000;
   font-weight: 700;
 }
+
 /* 3. Api Section */
 .api {
-  margin: 120px 0px 30px 100px;
-  height: 30vh;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
+  justify-content: space-between;
+  margin-left: 5vw;
+  margin-top: 8vh;
+  height: 38vh;
+  width: 95vw;
+  }
 
 .cards {
+  width: 88vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 40px;
+  gap: 2vw;
 }
 
 .card {
-  height: 18vh;
-  width: 12vw;
+  height: 90%;
+  width: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 30px;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
   border-radius: 15px;
 }
 
@@ -123,12 +141,13 @@ header > div {
 
 .card-active {
   background-color: #ffffff;
-  height: 18vh;
-  width: 12vw;
+  height: 90%;
+  width: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 30px;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
   border-radius: 15px;
 }
 
@@ -137,62 +156,101 @@ header > div {
 }
 
 
+.next_button{
+  height: 45px;
+  width: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #5a31fc;
+  color: #ffffff;
+  align-self: center; 
+  
+}
+
+.next_button>p{
+  font-size: 40px;
+  font-family: "poppins";
+  font-weight: 300;
+  text-align: center;
+  margin-top: -0.5vh;
+}
+
+
 /* Blog section  */
+
+.blog-section{
+  margin-top: 5vh;
+}
+
+
 .blog-heading {
   display: flex;
-  flex-direction: column;
-  margin: 140px 0px 30px 100px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 85vw;
+  margin-left: 5vw;
+
+}
+
+.blog-heading>p{
+  font-size: 22px;
+  font-weight: 700;
+  color: #5a31fc;
 }
 /* <!-- Blogs --> */
   .blog-cards{
-    margin-bottom: 60px;
+    margin: 3vh 0vw 6vh 2vw;
+  
   }
 
   .blog-card{
+    display: flex;
+    flex-direction: row;
     width: 45vw;
     justify-content: center;
+    
   }
 
 .blog-content{
   background-color:  #ffffff;
-  width: 20vw;
+  width: 25vw;
   border-top-right-radius:10px ;
   border-bottom-right-radius:10px;
-  padding: 20px 10px 50px 60px;
-  justify-content: space-between;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
-div.blog-content>h6{
-  margin-top: 0px;
-  margin-bottom: 15px;
+.blog-content>div:first-child{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 2vh;
+  margin-left: 3vw;
 }
 
-
-div.blog-content>h3{
-  
-  margin-bottom: 15px; 
+h6{
+  color: #5a31fc;
 }
 
 .blog-bottom{
-  position: relative;
-  top: 250px;
-  right: 280px;
-
+  position: absolute;
+  top: 25vh;
+  right: 17vw;
+  outline: 3px solid #ffffff;
+  border-radius: 1.5rem;
+  height: 5.5vh;
 }
 
 .blog-author{
   width: 300px;
-  position: relative;
-  top: 125px;
-  right: 125px;
-}
-
-.blog-cards,
-.download-section,
-.faq-content,
-.footer-left {
-  margin-left: 100px;
+  position: absolute;
+  top: 12.5vh;
+  right: 0vw;
 }
 
 .blog-cards,
@@ -230,50 +288,52 @@ div.blog-content>h3{
   width: 40vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 30px 0px 30px 100px;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-left: 5vw;
 }
 .faq-content>h2{
   font-size: 40px;
   line-height: 50px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 div.faq-content>h4:nth-child(2){
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 div.faq-content>h4:nth-child(3){
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .faq-content>button{
   height: 40px;
   width: 120px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #5a31fc;
   color: #ffffff;
   position: relative;
   z-index: 2px;
 }
+
 /* <!-- Download --> */
 .download-section {
   width: 85vw;
   height: 15vh;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 10px;
-  margin-bottom: 100px;
+  margin-left: 5vw;
+  margin-bottom: 8vh;
 }
 
 .download-content > h1 {
-  font-weight: 900;
+  font-weight: 700;
 }
-.download-content > span {
-  font-weight: 500;
+.download-content >h1> span {
+  font-weight: 400;
 }
 
 .download-email > form > input {
@@ -298,6 +358,8 @@ div.faq-content>h4:nth-child(3){
   position: relative;
   z-index: 2px;
 }
+
+
 /* <!-- Footer Section --> */
 .footer-section {
   background-color: #4516fe;
@@ -314,6 +376,7 @@ div.faq-content>h4:nth-child(3){
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 5vw;
 }
 
 .footer-right {
@@ -336,13 +399,14 @@ div.faq-content>h4:nth-child(3){
 
 .footer-logo {
   height: 45px;
-  width: 115px;
+  width: 125px;
 }
 
 .logos-list,
 .list {
   list-style-type: none;
   gap: 10px;
+  font-weight: 300;
 }
 
 .list-items:before {
@@ -352,4 +416,133 @@ div.faq-content>h4:nth-child(3){
 
 .list-items:first-child:before {
   content: "";
+  margin-left: -1vw;
+}
+
+@media screen and (max-width:1536px) {
+  
+  header { 
+    height: 60vh;  
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  .header-text > h2 {
+    font-size: 36px; 
+  }
+
+  .header-text {
+    margin-top: 20vh;
+    
+  }
+
+  .header-image {
+
+    height: 60vh;
+    width: 40vw;
+    margin-top: -3vh;
+
+  }
+
+  
+.cards {
+    margin-top: 3vh;
+    width: 92vw;
+}
+
+  .card, .card-active {
+    height: 25vh;
+    width: 20vw;
+    
+  }
+
+  .card-body{
+    font-size: 12.5px;
+  }
+
+  .blog-section{
+    margin-top: 10vh;
+  }
+
+  .blog-content>div:first-child{
+   
+    margin-top: -5vh;
+  
+  }
+
+  .blog-bottom{
+    position: absolute;
+    top: 29vh;
+    right: 17vw;
+    outline: 4px solid #ffffff;
+    border-radius: 1.5rem;
+    height: 6vh;
+  }
+
+  .blog-author{
+    width: 300px;
+    position: absolute;
+    top: 14.5vh;
+    right: -2vw;
+  }
+}
+
+@media screen and (max-width:1366px){
+  .blog-bottom{
+    position: absolute;
+    top: 32.5vh;
+    right: 17vw;
+    outline: 4px solid #ffffff;
+    border-radius: 1.5rem;
+    height: 7vh;
+  }
+
+  .blog-author{
+    width: 300px;
+    position: absolute;
+    top: 16.2vh;
+    right: -3.5vw;
+  }
+}
+
+@media screen and (max-width:1280px){
+
+ 
+  
+.blog-heading {
+ 
+  margin-top: 5vh;
+}
+
+  .blog-cards{
+    margin: 4vh 0vw 6vh 5vw;
+    gap: 2vw;
+  }
+
+  .blog-content{
+    height: 40vh;
+  }
+  
+.blog-content>div:first-child{
+  height: 30vh;
+  
+}
+
+  .blog-bottom{
+    position: absolute;
+    top: 35vh;
+    right: 17vw;
+    outline: 4px solid #ffffff;
+    border-radius: 1.5rem;
+    height: 7vh;
+  }
+
+  .blog-author{
+    width: 300px;
+    position: absolute;
+    top: 17.25vh;
+    right: -4vw;
+  }
 }
