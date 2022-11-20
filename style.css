@@ -1122,14 +1122,28 @@ div.faq-content>h4:nth-child(3){
 
 @media screen and (max-width:600px) {
 
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body{
+    width: 100vw;
+    
+  }
+
   header{
     height: 38rem;
     background-color: #6343e0;
+    width: 100vw;
     padding-top: 0rem;
+    padding-right: 2rem;
   }
 
   nav{
-    width: 92.5vw;
+    width: 100vw;
+    padding-right: 2rem;
+    /* padding: 0.8rem 0.2rem; */
   }
 
   .logo{
@@ -1263,6 +1277,12 @@ div.faq-content>h4:nth-child(3){
 
   /* faq section */
 
+  .faq-section{
+    width: 100vw;
+    padding-right: 2rem;
+    
+  }
+
   .faq-content{
     width: 96vw;
     align-items: center;
@@ -1310,6 +1330,7 @@ div.faq-content>h4:nth-child(3){
 
   .footer-section{
     height: 9rem;
+    padding-right: 2rem;
   }
 
   .footer-logo{
