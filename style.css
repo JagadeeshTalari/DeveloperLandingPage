@@ -15,30 +15,67 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 5vh;
+  gap: 5rem;
 }
 
 /* 1. Header section */
+.header-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
-
   background-color: #4516fe;
   width: 100vw;
-  height: 50vh;
+  height: 28rem;
   color: #ffffff;
+  padding-top: 2rem;
 }
+
 /* (i) Nav- bar section */
 nav {
-  height: 5vh;
+  width: 90vw;
+  height: 4rem;
+  margin: auto;
   /* background-color: #d86b6b; */
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 40px;
-  margin-right:4vw;
-  margin-top: 3vh;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 40px; */
+  /* margin-right:4vw; */
+  /* margin-top: 3vh; */
+}
+
+.logo{
+  max-width: 100%;
+  height: auto;
+}
+
+nav>div:first-child{
+  align-self: flex-end;
+}
+
+.nav-right{
+  width: 34vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-right>svg{
+  align-self: center;
+}
+
+.nav-item{
+  font-weight: 300;
+}
+
+.nav-item:hover{
+  font-weight: 500;
 }
 
 .nav-item-active {
@@ -50,22 +87,19 @@ nav {
 }
 
 /* (ii)  Header description Left section */
-header > div {
-  margin-left: 5vw;
-}
-
 .header-content{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 95vw;
+  margin-left: auto;
 }
 
 .header-text {
-  margin-top: 15vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 5vh;
+  justify-content: flex-start;
+  padding-top: 6rem;
   width: 50vw;
   gap: 10px;
 }
@@ -83,18 +117,18 @@ header > div {
 
 /* (iii)  Header image right section */
 .header-image {
-  height: 50vh;
-  width: 35vw;
+  height: auto;
+  max-width: 100%;
 }
 /* 2. Companies section */
 .companies {
   display: flex;
   flex-direction: row;
-  width: 50vw;
-  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+  justify-content: flex-start;
+  gap: 4rem;
   font-size: 24px;
-  margin-top: 3vh;
-  margin-left: 5vw;
 }
 
 .company-items {
@@ -105,17 +139,16 @@ header > div {
 
 /* 3. Api Section */
 .api {
+  width: 90vw;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 5vw;
-  margin-top: 8vh;
-  height: 38vh;
-  width: 95vw;
+  gap: 1.8rem;
   }
 
 .cards {
-  width: 88vw;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -123,13 +156,13 @@ header > div {
 }
 
 .card {
-  height: 90%;
+  height: 200px;
   width: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.6rem;
   border-radius: 15px;
 }
 
@@ -139,47 +172,56 @@ header > div {
   margin-bottom: 20px;
 }
 
-.card-active {
+.card-head, .card-head-active{
+  font-weight: 600;
+}
+
+.card-body{
+  font-size: 13px;
+}
+
+.card-active, .card:hover {
   background-color: #ffffff;
-  height: 90%;
+  height: 200px;
   width: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.6rem;
   border-radius: 15px;
 }
 
-.card-head-active {
+.card-head-active{
   color: #4516fe;
 }
 
 
 .next_button{
-  height: 45px;
-  width: 45px;
   border: none;
-  border-radius: 50%;
-  background-color: #5a31fc;
-  color: #ffffff;
   align-self: center; 
-  
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #5a31fc; 
 }
 
 .next_button>p{
-  font-size: 40px;
+  color: #ffffff;
   font-family: "poppins";
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 40px;
   text-align: center;
-  margin-top: -0.5vh;
+  line-height: 50px;
 }
 
 
 /* Blog section  */
 
 .blog-section{
-  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 
@@ -188,8 +230,8 @@ header > div {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  width: 85vw;
-  margin-left: 5vw;
+  width: 90vw;
+  margin: auto;
 
 }
 
@@ -199,38 +241,41 @@ header > div {
   color: #5a31fc;
 }
 /* <!-- Blogs --> */
-  .blog-cards{
-    margin: 3vh 0vw 6vh 2vw;
-  
-  }
+.blog-cards{
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  .blog-card{
-    display: flex;
-    flex-direction: row;
-    width: 45vw;
-    justify-content: center;
-    
-  }
+}
+
+.blog-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
 
 .blog-content{
   background-color:  #ffffff;
   width: 25vw;
+
   border-top-right-radius:10px ;
   border-bottom-right-radius:10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
 .blog-content>div:first-child{
-  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
-  margin-top: 2vh;
-  margin-left: 3vw;
+  margin-top: 0.7rem;
+  margin-left: 2.25rem;
+  margin-right: 0.7rem;
 }
 
 h6{
@@ -238,24 +283,26 @@ h6{
 }
 
 .blog-bottom{
-  position: absolute;
-  top: 25vh;
-  right: 17vw;
+  position: relative;
+  top: 3.5rem;
+  left: 2.25rem;
+  height: 3.2rem;
+}
+
+.blog-bottom>img{
   outline: 3px solid #ffffff;
-  border-radius: 1.5rem;
-  height: 5.5vh;
+  border-radius: 50%;
 }
 
 .blog-author{
   width: 300px;
-  position: absolute;
-  top: 12.5vh;
-  right: 0vw;
+  position: relative;
+  top: 0.3rem;
+  left: 3.5rem;
 }
 
 .blog-cards,
 .blog-card,
-.faq-section,
 .download-section,
 .footer-section,
 .list,
@@ -272,7 +319,7 @@ h6{
   flex-direction: row;
   background-color: #e9edff;
   background-size: cover;
-  gap: 100px;
+  justify-content: space-between;
 }
 
 .faq-image {
@@ -292,6 +339,7 @@ h6{
   gap: 1.5rem;
   margin-left: 5vw;
 }
+
 .faq-content>h2{
   font-size: 40px;
   line-height: 50px;
@@ -315,18 +363,19 @@ div.faq-content>h4:nth-child(3){
   border-radius: 5px;
   background-color: #5a31fc;
   color: #ffffff;
-  position: relative;
-  z-index: 2px;
-}
+  }
 
 /* <!-- Download --> */
 .download-section {
-  width: 85vw;
-  height: 15vh;
+  width: 90vw;
+  margin: auto;
+  height: 12rem;
   justify-content: space-between;
   align-items: flex-end;
-  margin-left: 5vw;
-  margin-bottom: 8vh;
+}
+
+.download-content, .download-email{
+  align-self: center;
 }
 
 .download-content > h1 {
@@ -336,27 +385,32 @@ div.faq-content>h4:nth-child(3){
   font-weight: 400;
 }
 
-.download-email > form > input {
-  height: 58px;
-  width: 550px;
-  border: none;
-  border-radius: 25px;
+.download-email{
   background-color: #e9edff;
-  color: #000000;
-  position: relative;
-  left: 160px;
-  padding-left: 50px;
+  border-radius: 25px;
+  width: 33vw;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
 }
 
-.download-email > form > button {
+.download-email > form > input {
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  font-weight: 600;
+  
+}
+
+.download-email > button {
   height: 50px;
   width: 150px;
   border: none;
   border-radius: 25px;
   background-color: #5a31fc;
   color: #ffffff;
-  position: relative;
-  z-index: 2px;
 }
 
 
@@ -364,34 +418,34 @@ div.faq-content>h4:nth-child(3){
 .footer-section {
   background-color: #4516fe;
   width: 100vw;
-  height: 30vh;
+  height: 16rem;
   color: #ffffff;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .footer-left {
-  height: 15vh;
   width: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 2rem;
   margin-left: 5vw;
 }
 
 .footer-right {
-  height: 15vh;
   width: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-end;
-  margin-right: 150px;
+  gap: 2rem;
 }
 
 .footer-right-logo {
   gap: 20px;
 }
+
 .footer-logos {
   height: 40px;
   width: 40px;
@@ -416,133 +470,9 @@ div.faq-content>h4:nth-child(3){
 
 .list-items:first-child:before {
   content: "";
-  margin-left: -1vw;
 }
 
-@media screen and (max-width:1536px) {
-  
-  header { 
-    height: 60vh;  
-  }
 
-  nav {
-    font-size: 14px;
-  }
-
-  .header-text > h2 {
-    font-size: 36px; 
-  }
-
-  .header-text {
-    margin-top: 20vh;
-    
-  }
-
-  .header-image {
-
-    height: 60vh;
-    width: 40vw;
-    margin-top: -3vh;
-
-  }
-
-  
-.cards {
-    margin-top: 3vh;
-    width: 92vw;
-}
-
-  .card, .card-active {
-    height: 25vh;
-    width: 20vw;
-    
-  }
-
-  .card-body{
-    font-size: 12.5px;
-  }
-
-  .blog-section{
-    margin-top: 10vh;
-  }
-
-  .blog-content>div:first-child{
-   
-    margin-top: -5vh;
-  
-  }
-
-  .blog-bottom{
-    position: absolute;
-    top: 29vh;
-    right: 17vw;
-    outline: 4px solid #ffffff;
-    border-radius: 1.5rem;
-    height: 6vh;
-  }
-
-  .blog-author{
-    width: 300px;
-    position: absolute;
-    top: 14.5vh;
-    right: -2vw;
-  }
-}
-
-@media screen and (max-width:1366px){
-  .blog-bottom{
-    position: absolute;
-    top: 32.5vh;
-    right: 17vw;
-    outline: 4px solid #ffffff;
-    border-radius: 1.5rem;
-    height: 7vh;
-  }
-
-  .blog-author{
-    width: 300px;
-    position: absolute;
-    top: 16.2vh;
-    right: -3.5vw;
-  }
-}
-
-@media screen and (max-width:1280px){
-
- 
-  
-.blog-heading {
- 
-  margin-top: 5vh;
-}
-
-  .blog-cards{
-    margin: 4vh 0vw 6vh 5vw;
-    gap: 2vw;
-  }
-
-  .blog-content{
-    height: 40vh;
-  }
-  
-.blog-content>div:first-child{
-  height: 30vh;
-  
-}
-
-  .blog-bottom{
-    position: absolute;
-    top: 35vh;
-    right: 17vw;
-    outline: 4px solid #ffffff;
-    border-radius: 1.5rem;
-    height: 7vh;
-  }
-
-  .blog-author{
-    width: 300px;
-    position: absolute;
-    top: 17.25vh;
-    right: -4vw;
-  }
+.footer-left>ul>li:nth-child(2)::before{
+  content: "";
 }
