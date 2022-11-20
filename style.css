@@ -260,7 +260,6 @@ nav>div:first-child{
 .blog-content{
   background-color:  #ffffff;
   width: 25vw;
-
   border-top-right-radius:10px ;
   border-bottom-right-radius:10px;
   display: flex;
@@ -475,4 +474,108 @@ div.faq-content>h4:nth-child(3){
 
 .footer-left>ul>li:nth-child(2)::before{
   content: "";
+}
+
+@media screen and (max-width:1400px) {
+
+  .logo{
+    height: 40px;
+  }
+
+  .nav-item{
+    font-size: 13px;
+  }
+  
+ /* (ii)  Header description Left section */
+
+  .header-text > h2 {
+    font-size: 36px;
+    letter-spacing: 1.3px;
+    line-height: 46px;
+    font-weight: 500;
+  }
+
+  /* 2. Companies section */
+
+  .companies {
+    font-size: 20px;
+  }
+
+  /* 3. Api Section */
+
+  .api-heading, .blog-heading>h1{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+  }
+
+
+  /* card section */
+
+  .card , .card-active {
+    height: 10.5rem;
+    padding: 1.4rem;
+  }
+
+  .card-logo{
+    height: 45px;
+    width: 45px;
+    margin-bottom: 15px;
+  }
+
+  .card-head, .card-head-active{
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .card-body{
+    font-size: 11px;
+  }
+
+  .card:hover{
+    height: 10.5rem; 
+    padding: 1.4rem; 
+  }
+
+  .next_button{
+    border: none;
+    align-self: center; 
+    height: 40px;
+    width: 40px;
+  }
+
+  .next_button>p{
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+  }
+  
+
+  /* Blog Section */
+
+  .blog-heading>p{
+    font-size: 1.2rem;
+  }
+
+  /* blogs */
+
+  .blog-content{
+    width: 23vw;
+  }
+
+  .blog-content>div>h3{
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  small{
+    font-size: 12px;
+  }
+
+  .blog-author{
+    font-size: 14px;
+  }
+
+
+
 }
