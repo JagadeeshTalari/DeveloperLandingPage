@@ -1330,7 +1330,7 @@ div.faq-content>h4:nth-child(3){
 
   .footer-section{
     height: 9rem;
-    padding-right: 2rem;
+    padding: 0rem 1rem;
   }
 
   .footer-logo{
